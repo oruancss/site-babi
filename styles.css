@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-size: 5vw; /* Tamanho da fonte relativo à largura da viewport */
+}
+
+@media (max-width: 600px) {
+    h1, h2, h3 {
+        font-size: 3rem; /* Tamanho ajustado para telas menores */
+    }
+}
