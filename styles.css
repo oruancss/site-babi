@@ -16,11 +16,27 @@ body {
 
 h1, h2, h3 {
     margin: 0;
-    font-size: 5vw; /* Tamanho da fonte relativo à largura da viewport */
+    font-size: 5vw;
 }
 
 @media (max-width: 600px) {
     h1, h2, h3 {
-        font-size: 3rem; /* Tamanho ajustado para telas menores */
+        font-size: 3rem;
     }
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+#iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
